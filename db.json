@@ -1,0 +1,70 @@
+{
+  "house": [
+    {
+      "houseName": "Duplex",
+      "housePrice": "120000",
+      "houseYear": "2019",
+      "houseImage": "duplex1.jpg",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "houseName": "Penthouse",
+      "housePrice": "5000000",
+      "houseYear": "12/9/2019",
+      "user_id": "4",
+      "houseImage": "Agora-apartment-penthopenthouse.jpg",
+      "id": 2
+    },
+    {
+      "houseName": "duplex",
+      "housePrice": "1200000",
+      "houseYear": "06/08/19",
+      "user_id": "4",
+      "houseImage": "duplex_inside.jpg",
+      "id": 3
+    },
+    {
+      "houseName": "duplex",
+      "housePrice": "1000000",
+      "houseYear": "09/08/19",
+      "user_id": "4",
+      "houseImage": "20103213_l.jpg",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "oji",
+      "email": "oji@gmail.com",
+      "password": "0987654321",
+      "telephone": "07066885644",
+      "user_level": 2,
+      "id": 2
+    },
+    {
+      "name": "Gabby",
+      "email": "gabby@gov.com",
+      "password": "54321",
+      "telephone": "08066885644",
+      "user_level": "1",
+      "id": 3
+    },
+    {
+      "name": "uzor",
+      "email": "uzor@gmail.com",
+      "password": "12345",
+      "telephone": "09066885644",
+      "user_level": "1",
+      "id": 4
+    },
+    {
+      "name": "abisi",
+      "email": "abisi@gmail.com",
+      "password": "abisi123",
+      "telephone": "06066885644",
+      "user_level": "1",
+      "id": 5
+    }
+  ]
+}
