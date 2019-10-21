@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        if(localStorage.getItem('userId') == null){
+            window.location = "/"
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary  " style="font-size: 1.3rem" >
+            <a class="navbar-brand pl-5 text-uppercase font-weight-bold" href="index.html">GOVS HOUSE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarText">
+                <ul class="navbar-nav pr-5 text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard.html">dashboard</a>
+                    </li>
+                   
+                </ul>
+            </div>  
+        </nav>
+    </header>
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class=" shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-header font-weight-bolder"><h4>Add to House List</h4></div>
+                    <div class="card-body">
+
+
+                        <form action="" method="POST" id="new_list">
+
+                        <div class="form-group">
+                            <div class="col-md-8 m-auto">
+                                <label for="name" id="name">Name</label>
+                                <input type="text" name="" id="houseName" class="form-control" placeholder="Penthouse">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 m-auto">
+                                <label for="price" id="price" required>Price</label>
+                                <input type="number" name="" id="housePrice" class="form-control" placeholder="price">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 m-auto">
+                                <label for="year" id="Year">Year</label>
+                                <input type="text" name="year" id="houseYear" class="form-control"
+                                    placeholder="9/04/19">
+                            </div>
+                        </div>
+
+                        <div class="form-group m-auto mb-3">
+                            <div class="col-md-8 m-auto">
+                                
+                                <input type="file" name="image" id="houseImage" class="form-control"
+                                    >
+                            </div>
+                        </div>
+
+                        <div class="form-group m-auto">
+                            <br>
+                            <div class="col-md-8 m-auto ">
+
+                                <input type="submit" value="Add" class="btn btn-primary" id="submitData">
+                                
+
+                            </div>
+                        </div>
+                    </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footerItems bg-primary text-center mt-5" style="height: 60px">
+            &copy 2019. all rights reserved
+        </div>
+    </footer>
+   
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
